@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVEL Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>LEVEL</h1>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Welcome to <span>LEVEL</span></h2>
+        <p>Experience the finest dining experience in town</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant Interior">
+        </div>
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>LEVEL Restaurant was founded in 2015 with a simple yet ambitious goal: to create an exceptional dining experience that combines delicious food, elegant ambiance, and impeccable service.</p>
+          <p>Our chefs bring decades of experience from around the world, crafting dishes that blend classic techniques with innovative approaches. We source only the finest local and sustainable ingredients to ensure quality and freshness in every bite.</p>
+          <p>At LEVEL, we believe dining is more than just a meal—it's an experience to be savored and remembered. We invite you to join us and discover why our restaurant has become a beloved destination for food enthusiasts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Menu</h2>
+      </div>
+      <div class="menu-grid">
+        <!-- Menu Item 1 -->
+        <div class="menu-item">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salad">
+          </div>
+          <div class="menu-content">
+            <h3>Garden Fresh Salad</h3>
+            <p>Mixed greens, cherry tomatoes, cucumber, with balsamic vinaigrette</p>
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+        
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1560717845-968823efbee1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pasta">
+          </div>
+          <div class="menu-content">
+            <h3>Truffle Mushroom Pasta</h3>
+            <p>Homemade fettuccine with wild mushrooms and truffle oil</p>
+            <span class="price">$18.99</span>
+          </div>
+        </div>
+        
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Steak">
+          </div>
+          <div class="menu-content">
+            <h3>Grilled Ribeye Steak</h3>
+            <p>Prime beef with garlic butter, served with roasted potatoes</p>
+            <span class="price">$32.99</span>
+          </div>
+        </div>
+        
+        <!-- Menu Item 4 -->
+        <div class="menu-item">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dessert">
+          </div>
+          <div class="menu-content">
+            <h3>Chocolate Lava Cake</h3>
+            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+            <span class="price">$9.99</span>
+          </div>
+        </div>
+        
+        <!-- Menu Item 5 -->
+        <div class="menu-item">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza">
+          </div>
+          <div class="menu-content">
+            <h3>Artisan Margherita Pizza</h3>
+            <p>San Marzano tomatoes, fresh mozzarella, basil, and olive oil</p>
+            <span class="price">$16.99</span>
+          </div>
+        </div>
+        
+        <!-- Menu Item 6 -->
+        <div class="menu-item">
+          <div class="menu-img">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salmon">
+          </div>
+          <div class="menu-content">
+            <h3>Grilled Salmon</h3>
+            <p>Atlantic salmon with lemon herb butter and seasonal vegetables</p>
+            <span class="price">$24.99</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Make a Reservation</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-item">
+            <h3>Location</h3>
+            <p>123 Gourmet Street, Foodie District</p>
+            <p>New York, NY 10001</p>
+          </div>
+          <div class="info-item">
+            <h3>Hours</h3>
+            <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+          </div>
+          <div class="info-item">
+            <h3>Contact</h3>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@levelrestaurant.com</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="reservation-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" pattern="^[A-Za-z\s]+$" title="Only letters and spaces allowed" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Enter a valid email address" required>
+            </div>
+            <div class="form-group">
+              <input type="number" name="no_of_people" placeholder="No of People" min="1" max="10" step="1" oninput="this.value = Math.abs(this.value)" required>
+            </div>
+            <div class="form-group">
+              <input type="time" name="time" id="contact-time" placeholder="Time" required>
+            </div>
+            <div class="form-group">
+              <input type="date" name="date" id="contact-date" placeholder="Date" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone Number" pattern="\d{10,15}" title="10 to 15 digits only" required>
+            </div>
+            <button type="submit" class="btn">Reserve Table</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Popup Element -->
+  <div id="reservation-popup" style="position:fixed; top:20px; right:-300px; background:#e67e22; color:#fff; border-radius:5px; transition:right 0.5s ease; z-index:1001; word-wrap:break-word; max-width:300px;">
+    Reservation submitted successfully!
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>LEVEL</h2>
+          <p>Fine Dining Experience</p>
+        </div>
+        <div class="social-links">
+          <!-- Updated social links with text -->
+          <a href="#" class="social-icon"><i class="fab fa-facebook-square fa-lg"></i> <span>Facebook</span></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram-square fa-lg"></i> <span>Instagram</span></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter-square fa-lg"></i> <span>Twitter</span></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 LEVEL Restaurant. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for mobile menu toggle
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-menu').classList.toggle('active');
+    });
+    
+    // Close mobile menu when a nav item is clicked
+    document.querySelectorAll('.nav-menu a').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelector('.nav-menu').classList.remove('active');
+        document.getElementById('mobile-menu').classList.remove('active');
+      });
+    });
+
+    // Set min date for reservation form and validate date/time
+    window.addEventListener('load', function() {
+      var today = new Date().toISOString().split('T')[0];
+      var dateInput = document.getElementById('contact-date');
+      var timeInput = document.getElementById('contact-time');
+      dateInput.setAttribute('min', today);
+      dateInput.addEventListener('change', function() {
+         if(this.value === today){
+           var now = new Date();
+           var hrs = now.getHours().toString().padStart(2, '0');
+           var mins = now.getMinutes().toString().padStart(2, '0');
+           timeInput.setAttribute('min', hrs + ':' + mins);
+         } else {
+           timeInput.removeAttribute('min');
+         }
+      });
+    });
+    document.getElementById('reservation-form').addEventListener('submit', function(e) {
+      var dateInput = document.getElementById('contact-date').value;
+      var timeInput = document.getElementById('contact-time').value;
+      var selectedDateTime = new Date(dateInput + 'T' + timeInput);
+      if(selectedDateTime <= new Date()){
+         e.preventDefault();
+         alert('Reservation date and time must be in the future.');
+      }
+    });
+
+    // JavaScript for AJAX form submission and popup
+    document.getElementById('reservation-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      const formData = new FormData(form);
+      fetch('reserve.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        const popup = document.getElementById('reservation-popup');
+        popup.textContent = data.trim() || "Reservation submitted successfully!";
+        popup.style.right = "20px"; // slide in
+        setTimeout(() => { popup.style.right = "-300px"; }, 3000); // slide out after 3 seconds
+        form.reset();
+      })
+      .catch(error => console.error('Error:', error));
+    });
+  </script>
+</body>
+</html>

@@ -27,23 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         die("Reservation date and time must be in the future.");
     }
 
-    // Database connection settings
-    $host = 'localhost';
-    $db   = 'level_restaurant';
-    $user = 'root';
-    $pass = ''; // Update password if needed
-
-    // Connect without selecting a database
-    $conn = new mysqli($host, $user, $pass);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    // Create the database if it does not exist
-    $conn->query("CREATE DATABASE IF NOT EXISTS $db");
-
-    // Select the database
-    $conn->select_db($db);
+    // Include database configuration
+    require_once 'db_config.php';
 
     // Ensure the reservations table exists with proper constraints
     $query = "CREATE TABLE IF NOT EXISTS reservations (
@@ -57,7 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         CHECK (name NOT REGEXP '[0-9]'),
         CHECK (email REGEXP '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$'),
-        -- Removed CHECK for future reservation time to avoid using functions like NOW()
         CHECK (phone REGEXP '^[0-9]{10,15}$')
     )";
     if (!$conn->query($query)) {

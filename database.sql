@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS lvl-restro;
+USE lvlrestro;
+
+CREATE TABLE IF NOT EXISTS reservations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    no_of_people INT NOT NULL,
+    time TIME NOT NULL,
+    date DATE NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

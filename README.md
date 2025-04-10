@@ -1,4 +1,3 @@
-@ -1,33 +0,0 @@
 # LEVEL Restaurant
 
 A responsive restaurant website built with HTML, CSS, JavaScript, and PHP.
